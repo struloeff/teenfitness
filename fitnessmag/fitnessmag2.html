@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TeenFit Today</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets\img\calogo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+    .button-36 {
+      background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      height: 4rem;
+      padding: 0 1.6rem;
+      text-align: center;
+      text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+      transition: all .5s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 65%;
+    }
+    </style>
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="#">
+          <img
+            src="assets\img\calogo.png"
+            width="28"
+            height="28"
+            ></img>
+          <strong>TeenFit Today</strong>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item is-tab">
+            Home
+          </a>
+
+          <a href="#1" class="navbar-item is-tab">
+            Section 1
+          </a>
+
+          <a href="#2" class="navbar-item is-tab">
+            Section 2
+          </a>
+
+          <a href="#3" class="navbar-item is-tab">
+            Section 3
+          </a>
+
+          <a href="#4" class="navbar-item is-tab">
+            Section 4
+          </a>
+
+          <a href="#5" class="navbar-item is-tab">
+            Section 5
+          </a>
+        </div>
+
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="./subscribe.html" class="button is-blurple" target=”_blank”>
+                <strong
+                  ><i class="fa-solid fa-right-to-bracket mr-2"></i>
+                  Subscribe</strong
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero bg-base is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+              <p class="title has-text-white has-text-weight-bold">
+                <span class="white">It's time to </span><span class="blurple">Get Fit</span><span class="white"></span>
+              </p>
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                Fitness isn't just about looking good, it's about feeling good. Both mentally and physically. As teenagers, we're at a prime age to establish healthy habits that will benefit us for the rest of our lives. This website will guide you through the world of fitness for teenagers.
+              </p>
+              <div class="buttons">
+                <a href="./subscribe.html" class="button is-info" target=”_blank”>
+                  <strong>Subscribe!</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+              <img
+                class="image has-image-centered vert-move mt-4"
+                src="assets/img/calogo.png"
+                alt="hero image"
+                style="width: 20rem;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#features"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Hero Waves Start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#1a2634"
+        fill-opacity="1"
+        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Hero Waves End -->
+
+      <section id="1" class="section mt-6">
+        <div class="has-text-centered">
+            <h1 class="title lined">Designing a fitness program</h1>
+            <div class="line line-center blurple"></div>
+        </div>
+    
+        <div class="column">
+            <!-- Five Components of Fitness -->
+            <h4 class="title"><span class="has-text-primary">Five Components of Fitness</span>
+            <ul class="subtitle mt-3">
+                <li><strong>1. BODY COMPOSITION:</strong><br>This isn't just about weight; it's about what makes up that weight. Body composition is the proportion of fat and non-fat in your body. It provides insights into your fitness level and potential health risks. A good body composition means having a good balance of body fat and muscle. We will talk more about this later.</li>
+                <li><strong>2. CARDIORESPIRATORY FITNESS:</strong><br>This is the powerhouse combo of your heart and lungs. It gauges how efficiently they work together to fuel your muscles with oxygen during prolonged physical activities. Boosting cardiorespiratory fitness means enhancing your body's ability to take in oxygen and deliver it to your cells, making activities like running, swimming, or cycling easier and more enjoyable.</li>
+                <li><strong>3. FLEXIBILITY:</strong><br>It's not just about touching your toes! Flexibility is the range of motion in a joint or group of joints. Regular stretching can improve flexibility, which in turn improves your performance in physical activities, decreases your risk of injuries, and ensures your joints remain healthy.</li>
+                <li><strong>4. MUSCULAR ENDURANCE:</strong><br>This is all about stamina. It determines how long your muscles can sustain an activity before they get tired. For instance, how many squats or push-ups can you do in a row? Activities like rowing, climbing, or circuit training can boost muscular endurance, ensuring you can keep going for longer without feeling fatigued.</li>
+                <li><strong>5. MUSCULAR STRENGTH:</strong><br>This is the raw power your muscles can generate. It's about how much force they can exert in a single effort. Building muscular strength involves resistance training, like weightlifting or resistance band exercises. Stronger muscles not only help in daily tasks but also protect your joints from injuries.</li>
+            </ul>
+            
+            <!-- Benefits of Exercise -->
+            <h4 class="title"><span class="has-text-primary">Benefits of Exercise</span></h4>
+
+            <h5 class="subtitle mt-2"><strong><u>PHYSICAL BENEFITS</u></strong></h5>
+            <p class="subtitle mt-3">Cardiovascular Health: Improves heart health by increasing heart efficiency and reducing the risk of heart disease.</p>
+            <p class="subtitle">Weight Management: Helps burn calories, which can aid in weight loss and prevent weight gain.</p>
+            <p class="subtitle">Muscle Strength and Endurance: Strengthens muscles and improves endurance.</p>
+            <p class="subtitle">Bone Health: Weight-bearing exercises can increase bone density and reduce the risk of osteoporosis.</p>
+            <p class="subtitle">Improved Respiratory Function: Increases lung capacity and efficiency.</p>
+            <p class="subtitle">Reduced Risk of Chronic Diseases: Such as type 2 diabetes, certain cancers, and high blood pressure.</p>
+            <p class="subtitle">Boosted Immunity: Moderate exercise can boost the immune system by improving overall general health.</p>
+            <p class="subtitle">Hormonal Balance: Helps regulate hormones, which can improve mood, sleep, and reduce the risk of chronic diseases.</p>
+            <p class="subtitle">Flexibility: Stretching exercises can improve flexibility, reducing the risk of injuries.</p>
+            <p class="subtitle">Improved Digestion: Can aid in better digestion and reduce the risk of constipation.</p>
+
+            <h5 class="subtitle mt-2"><strong><u>MENTAL BENEFITS</u></strong></h5>
+            <p class="subtitle mt-3">Stress Reduction: Physical activity increases the production of endorphins, which are natural mood lifters.</p>
+            <p class="subtitle">Mood Enhancement: Can alleviate feelings of depression and anxiety.</p>
+            <p class="subtitle">Improved Sleep: Regular physical activity can help regulate sleep patterns.</p>
+            <p class="subtitle">Boosted Self-esteem: Physical fitness can boost self-esteem and improve self-image.</p>
+            <p class="subtitle">Enhanced Cognitive Function: Exercise can improve brain function and protect memory and thinking skills.</p>
+            <p class="subtitle">Reduction in Cognitive Decline: Can reduce the risk of developing conditions like Alzheimer's disease.</p>
+
+            <h5 class="subtitle mt-2"><strong><u>SOCIAL BENEFITS</u></strong></h5>
+            <p class="subtitle mt-3">Improved Social Skills: Group exercises and team sports can help improve social skills.</p>
+            <p class="subtitle">Community Engagement: Joining a gym or a sports club can lead to increased community engagement.</p>
+            <p class="subtitle">Building Relationships: Shared physical activities can strengthen relationships with friends and family.</p>
+
+            <h5 class="subtitle mt-2"><strong><u>LIFESTYLE BENEFITS</u></strong></h5>
+            <p class="subtitle mt-3">Increased Energy: Regular physical activity can boost stamina and reduce feelings of fatigue.</p>
+            <p class="subtitle">Better Posture: Strength training and flexibility exercises can improve posture.</p>
+            <p class="subtitle">Enhanced Performance: Improved physical health can lead to enhanced performance in daily activities and tasks.</p>
+            <p class="subtitle">Longevity: Regular exercise is associated with a longer lifespan.</p>
+
+            <h5 class="subtitle mt-2"><strong><u>OTHER BENEFITS</u></strong></h5>
+            <p class="subtitle mt-3">Enhanced Creativity: Some people find that they are more creative after a workout.</p>
+            <p class="subtitle">Better Skin Health: By increasing blood flow, exercise can help nourish skin cells and keep them healthy.</p>
+            <p class="subtitle">Pain Management: Can help in the management and reduction of pain, including chronic pain.</p>
+
+            <br>
+            
+            <!-- FITT Formula -->
+            <h4 class="title"><span class="has-text-primary">FITT Formula</span>
+            <p class="subtitle mt-3"><strong>F - FREQUENCY:</strong><br>Depending on what you’re trying to do, frequency can change. If you are doing cardo and trying to burn fat, your body doesn’t need as much recovery, so you can do it more often, something like 5 times a week works. Or if you’re trying to build muscle/ lift weights, 2-3 can work. Start slow to avoid injury and gradually increase the frequency as your body adapts.</p>
+            <p class="subtitle"><strong>I - INTENSITY:</strong><br>Pay attention to your heart rate, make sure it stays under control. For strength training, start with weights that you can lift for 12-15 reps without straining, then gradually increase the weight as you become stronger. Focus on form and don’t increase the weight until your form is near perfect, ego lifting hurts your gains and can cause injury.</p>
+            <p class="subtitle"><strong>T - TIME:</strong><br>Aim for a minimum of 20 minutes per session. For cardiovascular workouts, 20-30 minutes is a good starting point, but you can increase this as your stamina improves. For strength training, the duration might vary based on the number of sets and exercises you're doing, but ensuring you're working out each muscle group adequately is key. Try not to overload yourself, maintaining motivation is just as important as maintaining gains.</p>
+            <p class="subtitle"><strong>T - TYPE:</strong><br>Again, this will vary depending on your goals. To burn fat, engage in aerobic exercise. Aerobic exercises, such as walking, jogging, cycling, and swimming, are great for improving cardiovascular health, burning calories, and boosting mood. Now, for strength training, in addition to lifting, don’t forget to perform flexibility exercises, and balance workouts. This ensures all muscle groups are worked, reduces the risk of injury, and improves overall functional fitness.</p>
+        </div>
+    </section>    
+
+      <section id="2" class="section mt-6">
+        <div class="has-text-centered">
+          <h1 class="title lined">Designing a fitness program</h1>
+          <div class="line line-center blurple"></div>
+        </div>
+  
+        <div class="column">
+          <h4 class="title"><span class="has-text-primary">Dedicated Discord Bot</span>
+          </h4>
+          <p class="subtitle mt-3">
+            And if all of what you have just seen wasn't enough, Clean Audio even has <span class="has-text-weight-bold">it's own discord bot</span>.
+            Clean Audio Bot is a huge multipurpose bot consisting of over 1500 lines of code. 
+            It has over 50 unique commands that do a multitude of different things made to suit the needs of any user.
+            The bot can do anything from flip a coin to play you in rock paper scissors, <u><a href="https://discord.gg/mhp5bmnZ5X" target="_blank">join the discord</a></u> and check it out.
+          </p>
+        </div>
+      </section>
+
+      <section id="3" class="section mt-6">
+        <div class="has-text-centered">
+          <h1 class="title lined">Designing a fitness program</h1>
+          <div class="line line-center blurple"></div>
+        </div>
+  
+        <div class="column">
+          <h4 class="title"><span class="has-text-primary">Dedicated Discord Bot</span>
+          </h4>
+          <p class="subtitle mt-3">
+            And if all of what you have just seen wasn't enough, Clean Audio even has <span class="has-text-weight-bold">it's own discord bot</span>.
+            Clean Audio Bot is a huge multipurpose bot consisting of over 1500 lines of code. 
+            It has over 50 unique commands that do a multitude of different things made to suit the needs of any user.
+            The bot can do anything from flip a coin to play you in rock paper scissors, <u><a href="https://discord.gg/mhp5bmnZ5X" target="_blank">join the discord</a></u> and check it out.
+          </p>
+        </div>
+      </section>
+
+      <section id="4" class="section mt-6">
+        <div class="has-text-centered">
+          <h1 class="title lined">Designing a fitness program</h1>
+          <div class="line line-center blurple"></div>
+        </div>
+  
+        <div class="column">
+          <h4 class="title"><span class="has-text-primary">Dedicated Discord Bot</span>
+          </h4>
+          <p class="subtitle mt-3">
+            And if all of what you have just seen wasn't enough, Clean Audio even has <span class="has-text-weight-bold">it's own discord bot</span>.
+            Clean Audio Bot is a huge multipurpose bot consisting of over 1500 lines of code. 
+            It has over 50 unique commands that do a multitude of different things made to suit the needs of any user.
+            The bot can do anything from flip a coin to play you in rock paper scissors, <u><a href="https://discord.gg/mhp5bmnZ5X" target="_blank">join the discord</a></u> and check it out.
+          </p>
+        </div>
+      </section>
+
+      <section id="5" class="section mt-6">
+        <div class="has-text-centered">
+            <h1 class="title lined">Eating Disorders</h1>
+            <div class="line line-center blurple"></div>
+        </div>
+    
+        <div class="column">
+            <h4 class="title">Understanding Eating Disorders</h4>
+            <p class="subtitle mt-3">
+                Understanding eating disorders is crucial for both awareness and prevention. These conditions often stem from complex interactions between biological, behavioral, psychological, and social factors. They can have severe health consequences and can be fatal if not treated appropriately.<br><br>
+              </p>
+    
+            <h4 class="title">What are eating disorders?</h4>
+            <p class="subtitle mt-3">
+                Eating disorders are serious and often fatal illnesses that cause severe disturbances to a person's eating behaviors. Obsessions with food, body weight, and shape may also signal an eating disorder. These disorders can affect anyone, regardless of age, race, gender, or background.<br><br>
+            </p>
+    
+            <h4 class="title">Anorexia Nervosa vs. Bulimia Nervosa</h4>
+            <p class="subtitle mt-3">
+                <strong>Anorexia Nervosa:</strong> Characterized by weight loss, difficulties maintaining an appropriate body weight for height, age, and stature, and, in many individuals, distorted body image. People with anorexia generally restrict the number of calories and the types of food they eat.<br><br>
+            </p>
+            <p class="subtitle mt-3">
+                <strong>Bulimia Nervosa:</strong> Involves episodes of eating large amounts of food followed by behaviors to prevent weight gain, such as forced vomiting. A feeling of being out of control during the binge-eating episodes is a hallmark of bulimia.<br><br>
+            </p>
+    
+            <h4 class="title">Muscle Dysmorphia</h4>
+            <p class="subtitle mt-3">
+                Often referred to as "bigorexia", muscle dysmorphia is a subtype of obsessive-compulsive disorder. It's characterized by an obsession with not being muscular enough. Those affected might spend long hours at the gym, obsessively focus on their diet, and frequently check their body in the mirror, but still perceive themselves as being too small.<br><br>
+            </p>
+            <p class="subtitle mt-3">
+                It's essential to recognize the signs of these disorders and seek help if you or someone you know is struggling. Early intervention and treatment are crucial.
+            </p>
+        </div>
+    </section>
+    
+  
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p class="title has-text-weight-bold">
+            Ready to experience <span class="blurple">TeenFit Today</span>?
+          </p>
+          <a href="./subscribe.html" target="_blank "class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-book"></i> Get Started</strong></a
+          >
+        </div>
+
+        <div class="column"></div>
+      </div>
+    </section>
+    <!-- Invite Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="https://discord.gg/mhp5bmnZ5X" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          &nbsp; &nbsp;
+          <a href="https://github.com/i5tar" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">TeenFit Today</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright TeenFit Today. All Rights
+          Reserved.
+        </p>
+
+        <p style="letter-spacing: 0.1em;" class="is-uppercase">
+          Website Created By
+          <a href="i5/i5.html" target="_blank">
+            <span class="blurple">William Struloeff</span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
